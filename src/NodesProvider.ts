@@ -114,7 +114,13 @@ class Dependency extends vscode.TreeItem {
     contextValue = "dependency";
     constructor(public readonly data : any, public readonly label: string, public readonly index : number){
         super(label);
-        this.tooltip = label;
+        this.tooltip = `NAME: ${label}\nPATH: ${data.path}`;
+        this.command = {
+            title: label,
+            command: 'OneTapRun.RunItem',
+            arguments: [this]
+        };
+
         this.iconPath = {
             light: ps.join(__filename, "..", "..", "resources", "icons", "item-light.svg"),
             dark: ps.join(__filename, "..", "..", "resources", "icons", "item.svg")

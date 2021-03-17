@@ -31,6 +31,11 @@
 				"title": "Delete"
 			},
 			{
+				"command": "OneTapRun.ChangeDesp",
+				"category": "ONE TAB RUN",
+				"title": "Change Desp"
+			},
+			{
 				"command": "OneTapRun.RunItem",
 				"category": "ONE TAB RUN",
 				"title": "Run",
@@ -50,7 +55,7 @@
 			}
 		],
 		"views": {
-			"package-explorer": [
+			"one_tab_run": [
 				{
 					"id": "OneTabRun",
 					"name": "ONE TAB RUN"
@@ -72,6 +77,10 @@
 				{
 					"command": "OneTapRun.DeleteItem",
 					"when": "view == OneTabRun"
+				},
+				{
+					"command": "OneTapRun.ChangeDesp",
+					"when": "view == OneTabRun"
 				}
 			],
 			"view/title": [
@@ -85,7 +94,7 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "package-explorer",
+					"id": "one_tab_run",
 					"title": "ONE TAB RUN",
 					"icon": "resources/icons/item.svg"
 				}

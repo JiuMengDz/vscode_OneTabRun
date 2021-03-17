@@ -12,6 +12,9 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 	vscode.commands.registerCommand("OneTapRun.Edit", (element)=>{ nodeProvider.EditItem(element); });
 	vscode.commands.registerCommand("OneTapRun.RunItem", (element)=>{ nodeProvider.RunItem(element.data); });
+	vscode.workspace.onDidChangeConfiguration(()=>{
+		nodeProvider.Refresh();
+	});
 }
 
 export function deactivate() {}
