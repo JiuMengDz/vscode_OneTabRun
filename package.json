@@ -3,7 +3,7 @@
 	"displayName": "One Tab Run",
 	"description": "",
 	"publisher": "JiuMengDZ",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
@@ -21,9 +21,9 @@
 				"command": "OneTapRun.AddItem",
 				"category": "ONE TAB RUN",
 				"title": "Add",
-				"icon" : {
-					"light" : "resources/icons/add-light.svg",
-					"dark" : "resources/icons/add.svg"
+				"icon": {
+					"light": "resources/icons/add-light.svg",
+					"dark": "resources/icons/add.svg"
 				}
 			},
 			{
@@ -40,18 +40,18 @@
 				"command": "OneTapRun.RunItem",
 				"category": "ONE TAB RUN",
 				"title": "Run",
-				"icon" : {
-					"light" : "resources/icons/run-light.svg",
-					"dark" : "resources/icons/run.svg"
+				"icon": {
+					"light": "resources/icons/run-light.svg",
+					"dark": "resources/icons/run.svg"
 				}
 			},
 			{
 				"command": "OneTapRun.Edit",
 				"category": "ONE TAB RUN",
 				"title": "Edit",
-				"icon" : {
-					"light" : "resources/icons/edit-light.svg",
-					"dark" : "resources/icons/edit.svg"
+				"icon": {
+					"light": "resources/icons/edit-light.svg",
+					"dark": "resources/icons/edit.svg"
 				}
 			}
 		],
@@ -101,12 +101,12 @@
 				}
 			]
 		},
-		"configuration" :[
+		"configuration": [
 			{
 				"title": "OneTabRun",
 				"properties": {
-					"OneTabRun.paths" : {
-						"type" : "object",
+					"OneTabRun.paths": {
+						"type": "object",
 						"default": {}
 					}
 				}
