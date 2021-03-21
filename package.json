@@ -14,6 +14,7 @@
 		"onView:OneTabRun"
 	],
 	"main": "./out/extension.js",
+	"icon": "resources/onetab.png",
 	"contributes": {
 		"commands": [
 			{
@@ -96,7 +97,7 @@
 				{
 					"id": "one_tab_run",
 					"title": "ONE TAB RUN",
-					"icon": "resources/icons/item.svg"
+					"icon": "resources/onetab_svg.svg"
 				}
 			]
 		},
